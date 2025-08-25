@@ -1,45 +1,47 @@
 {
-  "expo": {
-    "name": "Bulbasaur-M",
-    "slug": "Bulbasaur-M",
-    "version": "1.0.0",
-    "orientation": "default",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "automatic",
-    "newArchEnabled": true,
-    "scheme": "bulbasaurm",
-    "ios": {
-      "supportsTablet": true,
-      "bundleIdentifier": "com.bulbasaurm",
-      "infoPlist": {
-        "ITSAppUsesNonExemptEncryption": false
-      }
-    },
-    "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      },
-      "package": "com.bulbasaurm"
-    },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    },
-    "plugins": [
-      "expo-asset",
-      [
-        "expo-splash-screen",
-        {
-          "backgroundColor": "#ffffff",
-          "image": "./assets/splash-icon.png"
-        }
-      ],
-      "react-native-edge-to-edge"
-    ],
-    "extra": {
-      "eas": {
-        "projectId": "d277cc4d-cd7f-49c0-aa7e-b9d68cc51b72"
-      }
-    }
-  }
+	"expo": {
+		"name": "Bulbasaur-M",
+		"slug": "Bulbasaur-M",
+		"version": "1.0.0",
+		"orientation": "default",
+		"icon": "./assets/icon.png",
+		"userInterfaceStyle": "automatic",
+		"newArchEnabled": true,
+		"scheme": "bulbasaurm",
+		"ios": {
+			"buildNumber": "1",
+			"supportsTablet": true,
+			"bundleIdentifier": "com.bulbasaurm",
+			"infoPlist": {
+				"ITSAppUsesNonExemptEncryption": false
+			}
+		},
+		"android": {
+			"versionCode": 1000001,
+			"adaptiveIcon": {
+				"foregroundImage": "./assets/adaptive-icon.png",
+				"backgroundColor": "#ffffff"
+			},
+			"package": "com.bulbasaurm"
+		},
+		"web": {
+			"favicon": "./assets/favicon.png"
+		},
+		"plugins": [
+			"expo-asset",
+			[
+				"expo-splash-screen",
+				{
+					"backgroundColor": "#ffffff",
+					"image": "./assets/splash-icon.png"
+				}
+			],
+			"react-native-edge-to-edge"
+		],
+		"extra": {
+			"eas": {
+				"projectId": "d277cc4d-cd7f-49c0-aa7e-b9d68cc51b72"
+			}
+		}
+	}
 }
