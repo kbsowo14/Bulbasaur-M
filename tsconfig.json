@@ -9,7 +9,11 @@
     "skipLibCheck": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true
+    "noEmit": true,
+    "baseUrl": "./src",
+		"paths": {
+			"react": ["./node_modules/@types/react"]
+		},
   },
   "include": [
     "**/*"
