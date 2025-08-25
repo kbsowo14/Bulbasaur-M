@@ -3,7 +3,7 @@ import { NavigationContainer } from '@react-navigation/native'
 import { Asset } from 'expo-asset'
 import * as SplashScreen from 'expo-splash-screen'
 import MainNavigator from 'navigation/MainNavigator'
-import { useCallback, useEffect, useRef, useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 import { GestureHandlerRootView } from 'react-native-gesture-handler'
 
 Asset.loadAsync([
