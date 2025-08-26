@@ -7,7 +7,11 @@ module.exports = {
 		'./src/screens/**/*.{js,jsx,ts,tsx}',
 	],
 	theme: {
-		extend: {},
+		extend: {
+			fontFamily: {
+				dunggeunmo: ['dunggeunmo'],
+			},
+		},
 	},
 	plugins: [],
 }

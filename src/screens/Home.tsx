@@ -1,5 +1,4 @@
-import { View, TouchableOpacity } from 'react-native'
-import CommText from 'components/atoms/CommText'
+import { View, useWindowDimensions, Image } from 'react-native'
 import { NavigationProp, useNavigation } from '@react-navigation/native'
 import { RootStackParamList } from 'libs/types/navigation'
 import { memo } from 'react'
@@ -10,14 +9,21 @@ import { memo } from 'react'
  */
 const Home = () => {
 	const navigation = useNavigation<NavigationProp<RootStackParamList>>()
+	const { width, height } = useWindowDimensions()
+
 	return (
 		<View className="flex-1 items-center justify-center">
-			<TouchableOpacity
-				className="rounded-full bg-blue-500 py-2 px-4"
-				onPress={() => navigation.navigate('Settings')}
+			<View
+				className="justify-center items-center bg-[#4FADF5]"
+				style={{ width: width, height: height }}
 			>
-				<CommText className="text-white">Go to jane's profile</CommText>
-			</TouchableOpacity>
+				<View className="absolute top-0 justify-center items-center w-full">
+					<Image
+						source={require('assets/images/cloude.png')}
+						className="absolute left-8 top-16 w-[77px] h-[22px]"
+					/>
+				</View>
+			</View>
 		</View>
 	)
 }

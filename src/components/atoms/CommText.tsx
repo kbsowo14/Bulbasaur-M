@@ -18,7 +18,7 @@ const CommText = ({
 			allowFontScaling={false}
 			minimumFontScale={minFontSize}
 			maxFontSizeMultiplier={maxFontSize}
-			className="text-gray-800 text-sm font-sd-regular leading-6"
+			className="text-gray-800 text-base font-dunggeunmo"
 			{...args}
 		>
 			{children}

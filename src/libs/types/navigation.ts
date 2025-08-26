@@ -1,4 +1,4 @@
 export type RootStackParamList = {
-	MainTabs: undefined
+	Home: undefined
 	Settings: undefined
 }

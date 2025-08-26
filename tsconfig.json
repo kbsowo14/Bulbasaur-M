@@ -1,24 +1,20 @@
 {
-  "extends": "expo/tsconfig.base",
-  "compilerOptions": {
-    "moduleResolution": "bundler",
-    "strict": true,
-    "jsx": "react-jsx",
-    "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "baseUrl": "./src",
+	"extends": "expo/tsconfig.base",
+	"compilerOptions": {
+		"moduleResolution": "bundler",
+		"strict": true,
+		"jsx": "react-jsx",
+		"allowSyntheticDefaultImports": true,
+		"esModuleInterop": true,
+		"skipLibCheck": true,
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"noEmit": true,
+		"baseUrl": "./src",
 		"paths": {
 			"react": ["./node_modules/@types/react"]
-		},
-  },
-  "include": [
-    "**/*"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+		}
+	},
+	"include": ["**/*"],
+	"exclude": ["node_modules"]
 }

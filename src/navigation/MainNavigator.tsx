@@ -1,6 +1,6 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import { memo, Suspense } from 'react'
-import MainTabs from 'screens/MainTabs'
+import Home from 'screens/Home'
 import Settings from 'screens/Settings'
 
 const Stack = createNativeStackNavigator()
@@ -12,8 +12,8 @@ const Stack = createNativeStackNavigator()
 const MainNavigator = () => {
 	return (
 		<Suspense>
-			<Stack.Navigator initialRouteName="MainTabs">
-				<Stack.Screen name="MainTabs" component={MainTabs} options={{ headerShown: false }} />
+			<Stack.Navigator initialRouteName="Home">
+				<Stack.Screen name="Home" component={Home} options={{ headerShown: false }} />
 				<Stack.Screen name="Settings" component={Settings} />
 			</Stack.Navigator>
 		</Suspense>

@@ -1,16 +1,14 @@
-import { Assets as NavigationAssets } from '@react-navigation/elements'
 import { NavigationContainer } from '@react-navigation/native'
 import { Asset } from 'expo-asset'
 import * as SplashScreen from 'expo-splash-screen'
 import MainNavigator from 'navigation/MainNavigator'
 import { useCallback, useEffect, useState } from 'react'
 import { GestureHandlerRootView } from 'react-native-gesture-handler'
+import * as Font from 'expo-font'
 
-Asset.loadAsync([
-	...NavigationAssets,
-	require('./assets/newspaper.png'),
-	require('./assets/bell.png'),
-])
+Font.loadAsync({
+	dunggeunmo: require('assets/fonts/DungGeunMo.otf'),
+})
 
 SplashScreen.preventAutoHideAsync()
 
