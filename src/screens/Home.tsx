@@ -2,6 +2,8 @@ import { View, useWindowDimensions, Image } from 'react-native'
 import { NavigationProp, useNavigation } from '@react-navigation/native'
 import { RootStackParamList } from 'libs/types/navigation'
 import { memo } from 'react'
+import { LinearGradient } from 'expo-linear-gradient'
+import BulbBlock from 'components/organisms/BulbBlock'
 
 /**
  * @description
@@ -17,12 +19,7 @@ const Home = () => {
 				className="justify-center items-center bg-[#4FADF5]"
 				style={{ width: width, height: height }}
 			>
-				<View className="absolute top-0 justify-center items-center w-full">
-					<Image
-						source={require('assets/images/cloude.png')}
-						className="absolute left-8 top-16 w-[77px] h-[22px]"
-					/>
-				</View>
+				<BulbBlock />
 			</View>
 		</View>
 	)
